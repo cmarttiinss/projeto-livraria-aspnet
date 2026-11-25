@@ -1,6 +1,10 @@
-﻿namespace ProjetoLivraria.Repositories
+﻿using ProjetoLivraria.Models;
+
+namespace ProjetoLivraria.Repositories
 {
-    public interface ILoginRepositorio
+    public interface ILoginRepository
     {
+        LoginModel? BuscarPorEmail(string email);
+        void Cadastrar(LoginModel usuario);
     }
 }
