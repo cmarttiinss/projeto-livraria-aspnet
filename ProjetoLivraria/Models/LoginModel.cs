@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 namespace ProjetoLivraria.Models
 {
     //Declaração da classe pública que representa os dados enviados no formulário de login
-    public class LoginViewModel
+    public class LoginModel
     {
         // Torna o campo 'Email' obrigatório; se estiver vazio, exibe a mensagem personalizada
         [Required(ErrorMessage = "Informe o e-mail.")]
